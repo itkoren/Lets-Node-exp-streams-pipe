@@ -31,7 +31,7 @@ var server = http.createServer(function(req, res) {
 //    });
 
     req.on("end", function() {
-        res.end('Upload Complete!\n');
+        res.end("Upload Complete!\n");
     });
 }).listen(process.env.PORT || 8000, process.env.HOST || "0.0.0.0", function() {
     console.log("HTTP Server Started. Listening on " + server.address().address + " : Port " + server.address().port);

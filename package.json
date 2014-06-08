@@ -1,0 +1,19 @@
+{
+    "name": "streams-pipe-examples",
+    "version": "0.0.1",
+    "description": "Examples for Streams & Pipe",
+    "private": true,
+    "scripts": {
+        "start": "(echo '{\"beep\":\"boop\"'; sleep 1; echo ', \"boop\":\"beep\"}') | node ./withthrough.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "through": "2.3.x",
+        "concat-stream": "1.4.x"
+    },
+    "author": "Itai Koren (@itkoren)",
+    "license": "MIT",
+    "engines": {
+        "node": ">= 0.10.x"
+    }
+}
